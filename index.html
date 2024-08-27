@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Hand1000</title>
+  <link rel="icon" type="image/x-icon" href="static/images/H-icon.png">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Hand1000: Generating Realistic Hands from Text with Only 1,000 Images</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Haozhuo Zhang</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Bin Zhu</a><sup>2*</sup>,</span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yu Cao</a><sup>2</sup>,</span>
+                    <span class="author-block"></span>
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Yanbin Hao</a><sup>3</sup>,</span>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>Peking University<br><sup>2</sup>Singapore Management University<br><sup>3</sup>University of Science and Technology of China</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates the corresponding author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link 
+                  <span class="link-block">
+                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>-->
+
+                <!-- ArXiv abstract Link 
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- First fig-->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="static/images/first_fig.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        Comparison of hand image generation results
+        between Stable Diffusion and our Hand1000. Given the
+        same text prompt, Stable Diffusion produces deformed and
+        chaotic hands. In contrast, our proposed Hand1000 manages
+        to generate anatomically correct and realistic hands while
+        preserving details such as character, clothing, and colors.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- First fig -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Text-to-image generation models have achieved remarkable
+            advancements in recent years, aiming to produce realistic images from textual descriptions. However, these models often
+            struggle with generating anatomically accurate representations of human hands. The resulting images frequently exhibit issues such as incorrect numbers of fingers, unnatural
+            twisting or interlacing of fingers, or blurred and indistinct
+            hands. These issues stem from the inherent complexity of
+            hand structures and the difficulty in aligning textual descriptions with precise visual depictions of hands. To address these
+            challenges, we propose a novel approach named Hand1000
+            that enables the generation of realistic hand images with target gesture using only 1,000 training samples. The training of
+            Hand1000 is divided into three stages with the first stage aiming to enhance the model’s understanding of hand anatomy by
+            using a pre-trained hand gesture recognition model to extract
+            gesture representation. The second stage further optimizes
+            text embedding by incorporating the extracted hand gesture
+            representation, to improve alignment between the textual descriptions and the generated hand images. The third stage utilizes the optimized embedding to fine-tune the Stable Diffusion model to generate realistic hand images. In addition, we
+            construct the first publicly available dataset specifically designed for text-to-hand image generation. Based on the existing hand gesture recognition dataset, we adopt advanced image captioning models and LLaMA3 to generate high-quality
+            textual descriptions enriched with detailed gesture information. Extensive experiments demonstrate that Hand1000 significantly outperforms existing models in producing anatomically correct hand images while faithfully representing other
+            details in the text, such as faces, clothing and colors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Architecture -->
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Architecture</h2>
+      <img src="static/images/train_fig.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        The proposed Hand1000 is designed with a three-stage training process. In Stage I, the primary objective is to compute
+        mean hand gesture feature from images. Stage II builds on this by concatenating the mean hand gesture feature obtained in Stage
+        I with the corresponding text embeddings. These concatenated features are then mapped into a fused embedding, which is
+        further enhanced by linearly fusing it with the original text embedding, resulting in a double-fused embedding. This embedding
+        is optimized using a reconstruction loss through a frozen Stable Diffusion model, ensuring that the final embedding is well-optimized. Stage III involves fine-tuning the Stable Diffusion model for image generation, leveraging the frozen optimized
+        embedding obtained from Stage II.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- Architecture -->
+
+<!-- Dataset Construction -->
+<section class="hero is-small is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Dataset Construction</h2>
+      <img src="static/images/dataset.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        The dataset construction begins with generating
+        a textual description using an image captioning model (e.g.,
+        BLIP2) from image. The textual description, along with gesture labels, is then fed into the LLaMA3 model to produce a text description enriched with gesture label information.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- Dataset Construction -->
+
+<!-- Comparison -->
+<section class="hero is-small">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title is-3">Generated Images Comparison</h2>
+      <img src="static/images/Comparison.png" id="tree" alt="Description of the image" style="height: 100%;">
+      <h2 class="subtitle has-text-centered">
+        Comparison of images in hand gesture of four
+        fingers up generated by stable diffusion, fine-tuned stable
+        diffusion, stable diffusion enhanced with Imagic, fine-tuned stable diffusion enhanced with
+        Imagic and our Hand1000.
+      </h2>
+    </div>
+  </div>
+</section>
+<!-- Comparison -->
+
+<!-- Image carousel -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title is-3">More Results: Stable Diffusion vs Hand1000</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/call_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”phone call” generated by stable diffusion and our Hand1000.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/four_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”four” generated by stable diffusion and our Hand1000.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/like_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”like” generated by stable diffusion and our Hand1000.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/mute_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”mute” generated by stable diffusion and our Hand1000.
+       </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/ok_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”ok” generated by stable diffusion and our Hand1000.
+       </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/palm_supp.png" alt="MY ALT TEXT" style="width: 70%; display: block; margin: 0 auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Comparison of images in hand gesture of ”palm” generated by stable diffusion and our Hand1000.
+      </h2>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
